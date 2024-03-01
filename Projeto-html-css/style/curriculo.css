@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
 body {
-  box-sizing: border-box;
   background-color: black;
+  box-sizing: border-box;
   color: #f6f6f6;
   padding: 0;
   margin: 0;
@@ -21,6 +21,7 @@ body {
 
 .cabecalho__menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 80px;
 }
 
@@ -32,6 +33,22 @@ body {
   padding: 15px;
   cursor: pointer;
   text-decoration: none;
+}
+
+/* Estilizando as setas dos botões do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.555
+  ); /* Define a cor das setas como branca */
+  width: 30px; /* Define a largura da seta */
+  height: 30px; /* Define a altura da seta */
+}
+.carousel-caption p {
+  color: #000;
 }
 
 .apresentacao {
